@@ -20,6 +20,7 @@ function App() {
       {/* HEADER */}
 
       <header
+        className="slide-top"
         style={{
           display: "flex",
           justifyContent: "space-between",
@@ -31,6 +32,7 @@ function App() {
           position: "sticky",
           top: 0,
           zIndex: 1000,
+          boxShadow: "0 5px 20px rgba(0,0,0,0.05)",
         }}
       >
         <h1
@@ -50,49 +52,10 @@ function App() {
             flexWrap: "wrap",
           }}
         >
-          <a
-            href="#inicio"
-            style={{
-              textDecoration: "none",
-              color: "#111",
-              fontWeight: "bold",
-            }}
-          >
-            Início
-          </a>
-
-          <a
-            href="#fechaduras"
-            style={{
-              textDecoration: "none",
-              color: "#111",
-              fontWeight: "bold",
-            }}
-          >
-            Fechaduras
-          </a>
-
-          <a
-            href="#automacao"
-            style={{
-              textDecoration: "none",
-              color: "#111",
-              fontWeight: "bold",
-            }}
-          >
-            Automação
-          </a>
-
-          <a
-            href="#contato"
-            style={{
-              textDecoration: "none",
-              color: "#111",
-              fontWeight: "bold",
-            }}
-          >
-            Contato
-          </a>
+          <a href="#inicio">Início</a>
+          <a href="#fechaduras">Fechaduras</a>
+          <a href="#automacao">Automação</a>
+          <a href="#contato">Contato</a>
         </nav>
       </header>
 
@@ -106,11 +69,12 @@ function App() {
           justifyContent: "space-between",
           flexWrap: "wrap",
           gap: "40px",
-          padding: "80px 20px",
+          padding: "100px 20px",
           backgroundColor: "#ffffff",
         }}
       >
         <div
+          className="slide-left"
           style={{
             flex: 1,
             minWidth: "300px",
@@ -147,25 +111,14 @@ function App() {
               textDecoration: "none",
             }}
           >
-            <button
-              style={{
-                marginTop: "30px",
-                padding: "16px 35px",
-                border: "none",
-                borderRadius: "50px",
-                backgroundColor: "#16a34a",
-                color: "#fff",
-                fontSize: "18px",
-                fontWeight: "bold",
-                cursor: "pointer",
-              }}
-            >
+            <button className="premium-btn">
               Solicitar Orçamento
             </button>
           </a>
         </div>
 
         <div
+          className="slide-right"
           style={{
             flex: 1,
             display: "flex",
@@ -176,6 +129,7 @@ function App() {
           <img
             src={fechadura1}
             alt=""
+            className="zoom-image"
             style={{
               width: "100%",
               maxWidth: "500px",
@@ -197,6 +151,7 @@ function App() {
         }}
       >
         <h2
+          className="slide-top"
           style={{
             fontSize: "clamp(35px, 7vw, 60px)",
             color: "#0b5d3b",
@@ -218,6 +173,7 @@ function App() {
           <img
             src={fechadura2}
             alt=""
+            className="zoom-image"
             style={{
               width: "100%",
               maxWidth: "350px",
@@ -229,6 +185,7 @@ function App() {
           <img
             src={fechadura3}
             alt=""
+            className="zoom-image"
             style={{
               width: "100%",
               maxWidth: "350px",
@@ -259,6 +216,7 @@ function App() {
           }}
         >
           <div
+            className="slide-left"
             style={{
               flex: 1,
               minWidth: "300px",
@@ -287,6 +245,7 @@ function App() {
           </div>
 
           <div
+            className="slide-right"
             style={{
               flex: 1,
               display: "flex",
@@ -297,6 +256,7 @@ function App() {
             <img
               src={interruptor1}
               alt=""
+              className="zoom-image"
               style={{
                 width: "100%",
                 maxWidth: "450px",
@@ -319,6 +279,7 @@ function App() {
           <img
             src={interruptor2}
             alt=""
+            className="zoom-image"
             style={{
               width: "100%",
               maxWidth: "300px",
@@ -329,6 +290,7 @@ function App() {
           <img
             src={interruptor3}
             alt=""
+            className="zoom-image"
             style={{
               width: "100%",
               maxWidth: "300px",
@@ -349,6 +311,7 @@ function App() {
         }}
       >
         <h2
+          className="slide-top"
           style={{
             fontSize: "clamp(35px, 7vw, 70px)",
             color: "#0b5d3b",
@@ -379,22 +342,22 @@ function App() {
             textDecoration: "none",
           }}
         >
-          <button
-            style={{
-              marginTop: "40px",
-              padding: "18px 40px",
-              border: "none",
-              borderRadius: "50px",
-              backgroundColor: "#16a34a",
-              color: "#fff",
-              fontSize: "20px",
-              fontWeight: "bold",
-              cursor: "pointer",
-            }}
-          >
+          <button className="premium-btn">
             Chamar no WhatsApp
           </button>
         </a>
+
+        <p
+          style={{
+            marginTop: "50px",
+            color: "#777",
+            fontSize: "15px",
+          }}
+        >
+          © 2026 NeoLock — Todos os direitos reservados
+          <br />
+          Desenvolvido por 11 99188-2423
+        </p>
       </section>
     </div>
   )
