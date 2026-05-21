@@ -14,7 +14,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* ANIMAÇÃO DE ENTRADA */
+/* ANIMAÇÃO GERAL */
 
 @keyframes fade {
   from {
@@ -28,20 +28,23 @@ body {
   }
 }
 
-/* EFEITO NAS IMAGENS */
+/* IMAGENS */
 
 img {
-  transition: 0.4s;
+  transition: transform 0.4s ease;
 }
 
 img:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 /* BOTÕES */
 
 button {
-  transition: 0.3s;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    background-color 0.3s ease;
 }
 
 button:hover {
@@ -56,7 +59,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /* RESPONSIVO */
@@ -72,10 +75,7 @@ a:hover {
   }
 
   h1,
-  h2 {
-    text-align: center;
-  }
-
+  h2,
   p {
     text-align: center;
   }
