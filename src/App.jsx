@@ -139,21 +139,29 @@ function App() {
             no aplicativo e integração com Alexa.
           </p>
 
-          <button
+          <a
+            href="https://wa.me/5511991882423"
+            target="_blank"
             style={{
-              marginTop: "30px",
-              padding: "16px 35px",
-              border: "none",
-              borderRadius: "50px",
-              backgroundColor: "#16a34a",
-              color: "#fff",
-              fontSize: "18px",
-              fontWeight: "bold",
-              cursor: "pointer",
+              textDecoration: "none",
             }}
           >
-            Solicitar Orçamento
-          </button>
+            <button
+              style={{
+                marginTop: "30px",
+                padding: "16px 35px",
+                border: "none",
+                borderRadius: "50px",
+                backgroundColor: "#16a34a",
+                color: "#fff",
+                fontSize: "18px",
+                fontWeight: "bold",
+                cursor: "pointer",
+              }}
+            >
+              Solicitar Orçamento
+            </button>
+          </a>
         </div>
 
         <div
@@ -362,21 +370,29 @@ function App() {
           automação residencial e integração inteligente.
         </p>
 
-        <button
+        <a
+          href="https://wa.me/5511991882423"
+          target="_blank"
           style={{
-            marginTop: "40px",
-            padding: "18px 40px",
-            border: "none",
-            borderRadius: "50px",
-            backgroundColor: "#16a34a",
-            color: "#fff",
-            fontSize: "20px",
-            fontWeight: "bold",
-            cursor: "pointer",
+            textDecoration: "none",
           }}
         >
-          Chamar no WhatsApp
-        </button>
+          <button
+            style={{
+              marginTop: "40px",
+              padding: "18px 40px",
+              border: "none",
+              borderRadius: "50px",
+              backgroundColor: "#16a34a",
+              color: "#fff",
+              fontSize: "20px",
+              fontWeight: "bold",
+              cursor: "pointer",
+            }}
+          >
+            Chamar no WhatsApp
+          </button>
+        </a>
       </section>
     </div>
   )
