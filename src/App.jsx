@@ -140,8 +140,9 @@ function App() {
           </p>
 
           <a
-            href="https://wa.me/5511991882423"
+            href="https://api.whatsapp.com/send?phone=5511991882423"
             target="_blank"
+            rel="noreferrer"
             style={{
               textDecoration: "none",
             }}
@@ -371,8 +372,9 @@ function App() {
         </p>
 
         <a
-          href="https://wa.me/5511991882423"
+          href="https://api.whatsapp.com/send?phone=5511991882423"
           target="_blank"
+          rel="noreferrer"
           style={{
             textDecoration: "none",
           }}
